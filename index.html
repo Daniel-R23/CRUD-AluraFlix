@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD AluraFlix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    <h1 class="page-title">
+      Aluraflix
+    </h1>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+  </header>
+  <main>
+    <section id="cadastro">
+      <h2>Cadastro de Filmes</h2>
+      <span id="fechar" onclick="fecharPopUp()">X</span>
+      <div id="cd">
+        <label for="imagem">URL da Capa</label>
+        <input type="text" name="imagem" id="imagem" />
+        <label for="titulo">Título do Filme</label>
+        <input type="text" name="titulo" id="titulo" />
+        <button onclick="cadastrar()">Cadastrar</button>
+      </div>
+    </section>
+    <section id="sec-principal">
+      <span class="seta" id="esquerda" onclick="voltarSlide()"><img src="https://img.icons8.com/ios/50/000000/less-than.png" alt="#"></span>
+      <div id="principal"></div>
+      <span class="seta"id="direita" onclick="avancarSlide()"><img src="https://img.icons8.com/ios/50/000000/less-than.png" alt="#"><span>
+    </section>
+  </main>
+  <footer>
+    <button onclick="abrirPopUp()">Adicionar Filme</button>
+    <p>Desenvolvido por Daniel Rodrigues</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
